@@ -1,6 +1,47 @@
 @ApplicationTracker_HostAddress = http://localhost:5150
 
-GET {{ApplicationTracker_HostAddress}}/weatherforecast/
+# GET {{ApplicationTracker_HostAddress}}/weatherforecast/
+# Accept: application/json
+
+# ###
+
+GET {{ApplicationTracker_HostAddress}}/application/
 Accept: application/json
+
+###
+
+
+// ----------- POST REQUEST:
+POST {{ApplicationTracker_HostAddress}}/application
+Content-Type: application/json
+
+{
+   "companyName": "Galactic Network Intergrators",
+    "jobTitle": "Full-Stack Developer",
+    "submissionDate": "1/21/2025",
+    "responseDate": "1/22/2025",
+    "result": "Denied"
+}
+
+###
+
+
+// ----------- PUT REQUEST:
+PUT {{ApplicationTracker_HostAddress}}/application/1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "companyName": "Booz Allen",
+    "jobTitle": "Back-End Developer, Jr." ,
+    "submissionDate": "1/22/2025",
+    "responseDate": "1/23/2025",
+    "result": "Pending"
+}
+
+###
+
+// ----------- DELETE REQUEST:
+DELETE {{ApplicationTracker_HostAddress}}/application/3
 
 ###

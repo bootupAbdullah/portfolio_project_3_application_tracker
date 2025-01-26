@@ -10,7 +10,7 @@ public static class ApplicationService
     {
         Applications = new List<Application>
         {
-            new Application { Id = 1, CompanyName = "Booz Allen", JobTitle = "Back-End Developer, Jr" },
+            new Application { Id = 1, CompanyName = "Booz Allen", JobTitle = "Back-End Developer, Jr", SubmissionDate = "1-22-25", ResponseDate = "1-23-25", Result = "Pending" },
         };
     }
 
