@@ -41,6 +41,6 @@ Content-Type: application/json
 ###
 
 // ----------- DELETE REQUEST:
-DELETE {{ApplicationTracker_HostAddress}}/application/3
+DELETE {{ApplicationTracker_HostAddress}}/application/5
 
 ###

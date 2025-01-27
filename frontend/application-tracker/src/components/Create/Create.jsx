@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import './Create.css'; 
 
-
-
 const Create = ({service, setApplications}) => {
     const [companyName, setCompanyName] = useState('');
     const [jobTitle, setJobTitle] = useState('');

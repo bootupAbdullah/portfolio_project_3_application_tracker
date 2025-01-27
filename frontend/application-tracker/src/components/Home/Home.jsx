@@ -1,12 +1,16 @@
 import '../../App.css';
+import { useState } from 'react';
 
-import { useEffect, useState } from 'react';
+const Home = ({ allApplications, onCardClick }) => {
 
-const Home = ({ allApplications }) => {
     return (
         <div className='applicationContainer'>
             {allApplications.map((application, index) => (
-                <div className='applicationContent' key={index}>
+                <div 
+                    className='applicationContent' 
+                    key={index}
+                    onClick={() => onCardClick(application)}
+                >
                     <h2>Company Name: {application.companyName}</h2>
                     <h2>Job Title: {application.jobTitle}</h2>
                     <h3>Application Submitted: {application.submissionDate}</h3>

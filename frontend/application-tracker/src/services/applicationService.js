@@ -28,7 +28,6 @@ const postNewApplication = async (newApplication) => {
             const applicationResult = await response.json();
             console.log('Post Successful:', applicationResult);
         } else {
-            // Handle non-successful responses
             console.error('Failed to register application:', response.status, response.statusText);
         }
     } catch (error) {
@@ -36,4 +35,25 @@ const postNewApplication = async (newApplication) => {
     }
 };
 
-export { show, postNewApplication };
+const putRequest = async (id, updatedApplication) => {
+    try {
+        const response = await fetch(`${BASE_URL}/${id}`, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(updatedApplication)
+        });
+
+        if (response.ok) {
+            const updatedResult = await response.json();
+            console.log('Update Successful:', updatedResult);
+        } else {
+            console.error('Failed to update application:', response.status, response.statusText);
+        }
+    } catch (error) {
+        console.error('Error during fetch operation:', error);
+    }
+};
+
+export { show, postNewApplication, putRequest };
