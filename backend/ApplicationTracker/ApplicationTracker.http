@@ -10,7 +10,6 @@ Accept: application/json
 
 ###
 
-
 // ----------- POST REQUEST:
 POST {{ApplicationTracker_HostAddress}}/application
 Content-Type: application/json
