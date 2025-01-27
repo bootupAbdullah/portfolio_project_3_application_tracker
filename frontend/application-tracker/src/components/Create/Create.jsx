@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Create.css'; 
 
 
 
@@ -46,11 +47,11 @@ const Create = ({service, setApplications}) => {
             </label>
             <label>
                 Submission Date:
-                <input type="date" value={submissionDate} onChange={(e) => setSubmissionDate(e.target.value)} />
+                <input type="text" value={submissionDate} onChange={(e) => setSubmissionDate(e.target.value)} />
             </label>
             <label>
                 Response Date:
-                <input type="date" value={responseDate} onChange={(e) => setResponseDate(e.target.value)} />
+                <input type="text" value={responseDate} onChange={(e) => setResponseDate(e.target.value)} />
             </label>
             <label>
                 Result:
