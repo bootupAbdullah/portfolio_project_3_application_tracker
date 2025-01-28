@@ -1,4 +1,4 @@
-const Read = ({ application, onBackClick }) => {
+const Read = ({ application, onBackClick, handleUpdate }) => {
 
     return (
         <div className='readContainer'>
@@ -8,6 +8,7 @@ const Read = ({ application, onBackClick }) => {
             <h3>Response Received: {application.responseDate}</h3>
             <h4>Result: {application.result}</h4>
             <button onClick={onBackClick}>Back</button>
+            <button onClick={handleUpdate}>Update</button>
         </div>
     );
 };

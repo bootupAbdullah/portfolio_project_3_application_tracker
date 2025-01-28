@@ -27,6 +27,11 @@ const App = () => {
     setPage('Home')
   }
 
+  const handleUpdate = (application) => {
+    setSelectedApplication(application)
+    setPage('UpdateApplication')
+  }
+
   useEffect(() => {
     const fetchData = async () => {
       const data = await applicationService.show();
@@ -47,10 +52,10 @@ const App = () => {
         <Create service={applicationService} setApplications={setApplications} />
       )}
       {page === "Read" && selectedApplication && (
-        <Read application={selectedApplication} onBackClick={handleBackClick} />
+        <Read application={selectedApplication} onBackClick={handleBackClick} handleUpdate={handleUpdate} />
       )}
       {page === "UpdateApplication" && selectedApplication && (
-        <UpdateApplication application={selectedApplication} onBackClick={handleBackClick} />
+        <UpdateApplication application={selectedApplication} onBackClick={handleBackClick} setApplications={setApplications} setPage={setPage} />
       )}
     </main>
     </>

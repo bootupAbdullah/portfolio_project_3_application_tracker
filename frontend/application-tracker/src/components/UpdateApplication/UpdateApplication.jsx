@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Update = ({application, onBackClick, handlePut}) => {
+const Update = ({application, onBackClick, handlePut, setApplications, setPage}) => {
     
     const [companyName, setCompanyName] = useState('');
     const [jobTitle, setJobTitle] = useState('');
@@ -8,18 +8,41 @@ const Update = ({application, onBackClick, handlePut}) => {
     const [responseDate, setResponseDate] = useState('');
     const [result, setResult] = useState('');
     
-
+    const handleBackButton = () => {
+        setPage('Home')
+    }
     
     return (
-        <div className='readContainer'>
-            <h2>Company Name: {application.companyName}</h2>
-            <h2>Job Title: {application.jobTitle}</h2>
-            <h3>Application Submitted: {application.submissionDate}</h3>
-            <h3>Response Received: {application.responseDate}</h3>
-            <h4>Result: {application.result}</h4>
-            <button onClick={onBackClick}>Back</button>
-            <button onClick={handlePut}>Submit</button>
-        </div>
+
+
+
+        <>
+        <h1>Work in Progress</h1>
+        <button onClick={handleBackButton}>Back</button>
+        </>
+        // <form onSubmit={handleUpdate}>
+        //     <label>
+        //         Company Name:
+        //         <input type="text" value={companyName} onChange={(e) => setCompanyName(e.target.value)} />
+        //     </label>
+        //     <label>
+        //         Job Title:
+        //         <input type="text" value={jobTitle} onChange={(e) => setJobTitle(e.target.value)} />
+        //     </label>
+        //     <label>
+        //         Submission Date:
+        //         <input type="text" value={submissionDate} onChange={(e) => setSubmissionDate(e.target.value)} />
+        //     </label>
+        //     <label>
+        //         Response Date:
+        //         <input type="text" value={responseDate} onChange={(e) => setResponseDate(e.target.value)} />
+        //     </label>
+        //     <label>
+        //         Result:
+        //         <input type="text" value={result} onChange={(e) => setResult(e.target.value)} />
+        //     </label>
+        //     <button type="submit">Create Application</button>
+        // </form>
     );
 }
 
