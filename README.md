@@ -16,3 +16,20 @@ This is a full-stack CRUD (Create, Read, Update, Delete) application that allows
 - **Backend:** C#, ASP.NET
 - **Database:** (To be added or specify if used)
 - **Version Control:** Git
+
+
+## Update 6/17/2025
+
+### Immediate Tasks
+- [ ] Github Projects - Start here next meeting (July 1st - Maybe, July 15th, 🔒 and loaded)
+- [ ] Fix npm issues and get app running
+- [ ] Audit current functionality - document what works/broken
+
+### Backend Migration  
+- [ ] Migrate from current backend to Go
+- [ ] Implement user database
+- [ ] Add Auth0 authentication
+- [ ] Build dashboard functionality
+
+### Priority
+Focus on immediate tasks first, then proceed with backend migration.

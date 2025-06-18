@@ -16,10 +16,10 @@ main {
   height: 90vh;
   margin-left: 20px;
    /* Center and add spacing at the top */
-  border: 1px solid black; /* Light grey thin border */
-  background-color: #fff; /* White background for contrast */
-  border-radius: 10px; /* Slightly rounded corners */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border: 1px solid black; /* Light grey thin border */
+    background-color: #fff; /* White background for contrast */
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .applicationContainer {
@@ -33,16 +33,16 @@ main {
   color: black;
   width: 30vw;
   height: 30vh;
-  border: 1px solid black; /* Light grey border */
-  border-radius: 5px; /* Slightly rounded corners */
+  border: 1px solid black; 
+  border-radius: 5px; 
   padding: 20px;
-  margin-bottom: 20px; /* Space between cards */
-  background-color: #f9fafb; /* Very light grey background for cards */
+  margin-bottom: 20px; 
+  background-color: #f9fafb; 
 }
 
 h2, h3, h4 {
-  margin: 0; /* Zero out margins for headings */
-  padding: 5px 0; /* Add spacing inside headings */
+  margin: 0; 
+  padding: 5px 0; 
 }
 
 button {
