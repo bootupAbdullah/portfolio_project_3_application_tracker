@@ -1,12 +1,11 @@
 {
   "Version": 1,
-  "Hash": "S7PxfHuubGPpRB4wlDUDJdIlAMKV6Lf3IoqH+Vn5sw0=",
+  "Hash": "K293pZR03O64kHp/BCzDFZbmJt0VDQrw7iZ1NMM3/wU=",
   "Source": "ApplicationTracker",
   "BasePath": "_content/ApplicationTracker",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": []
 }

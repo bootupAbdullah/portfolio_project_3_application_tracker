@@ -33,3 +33,32 @@ This is a full-stack CRUD (Create, Read, Update, Delete) application that allows
 
 ### Priority
 Focus on immediate tasks first, then proceed with backend migration.
+
+
+
+## **Last Updated:** June 21, 2025
+
+### .NET Configuration
+
+This project requires .NET 8.0 runtime. Due to system having multiple .NET versions installed, the following configuration was implemented:
+
+- **Primary System**: .NET 9.0.5 (global default)
+- **Project Runtime**: .NET 8.0.117 via Homebrew (`dotnet@8`)
+- **Configuration**: Shell alias created for project-specific .NET 8 usage
+
+### Running the Application
+
+```bash
+# Start the development server
+dotnet8 run
+
+# Application will be available at:
+# http://localhost:5150
+```
+
+### Development Notes
+
+- HTTPS development certificate installed for local development
+- Application configured for Development environment
+- Hot reload and debugging enabled
+

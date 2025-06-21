@@ -452,11 +452,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/akd_dev/code/ga/projects/unit-5/unit-5-.NET-CS-CRUD-APP/backend/ApplicationTracker/ApplicationTracker.csproj",
+      "projectUniqueName": "/Users/akd_dev/Programming/portfolio_projetcs/bootcamp_projects_for_display/portfolio_project_3_application_tracker/backend/ApplicationTracker/ApplicationTracker.csproj",
       "projectName": "ApplicationTracker",
-      "projectPath": "/Users/akd_dev/code/ga/projects/unit-5/unit-5-.NET-CS-CRUD-APP/backend/ApplicationTracker/ApplicationTracker.csproj",
+      "projectPath": "/Users/akd_dev/Programming/portfolio_projetcs/bootcamp_projects_for_display/portfolio_project_3_application_tracker/backend/ApplicationTracker/ApplicationTracker.csproj",
       "packagesPath": "/Users/akd_dev/.nuget/packages/",
-      "outputPath": "/Users/akd_dev/code/ga/projects/unit-5/unit-5-.NET-CS-CRUD-APP/backend/ApplicationTracker/obj/",
+      "outputPath": "/Users/akd_dev/Programming/portfolio_projetcs/bootcamp_projects_for_display/portfolio_project_3_application_tracker/backend/ApplicationTracker/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/akd_dev/.nuget/NuGet/NuGet.Config"
