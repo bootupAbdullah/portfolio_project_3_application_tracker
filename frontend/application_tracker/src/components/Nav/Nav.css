@@ -1,0 +1,42 @@
+/* Navigation container */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+/* Shared button styles */
+.nav-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Dashboard button */
+.nav-dashboard {
+  background-color: #007bff;
+  color: white;
+}
+
+.nav-dashboard:hover {
+  background-color: #0056b3;
+}
+
+/* Create button */
+.nav-create {
+  background-color: #28a745;
+  color: white;
+}
+
+.nav-create:hover {
+  background-color: #1e7e34;
+}

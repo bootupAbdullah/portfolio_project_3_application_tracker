@@ -12,53 +12,13 @@ main {
   /* flex-wrap: wrap; */
   align-items: center;
   justify-content: center;
-  width: 97vw;
-  height: 90vh;
-  margin-left: 20px;
+  width: 90vw;
+  height: 80vh;
+  border: 100px solid yellow;
    /* Center and add spacing at the top */
-    border: 1px solid black; /* Light grey thin border */
-    background-color: #fff; /* White background for contrast */
-    border-radius: 10px; /* Slightly rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-.applicationContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.applicationContent {
-  color: black;
-  width: 30vw;
-  height: 30vh;
   border: 1px solid black; 
-  border-radius: 5px; 
-  padding: 20px;
-  margin-bottom: 20px; 
-  background-color: #f9fafb; 
+  background-color: #fff; 
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h2, h3, h4 {
-  margin: 0; 
-  padding: 5px 0; 
-}
-
-button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #007bff;
-  color: white;
-  cursor: pointer;
-  font-size: 1em;
-}
-button:hover {
-  background-color: #0056b3;
-}
-
-nav {
-  margin-bottom: 20px;
-  text-align: center;
-}
