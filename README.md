@@ -62,3 +62,33 @@ dotnet8 run
 - Application configured for Development environment
 - Hot reload and debugging enabled
 
+
+
+## Addional Development Updates
+
+### Component Architecture Refactor
+- **Renamed Home component to Dashboard** - Better reflects the application's purpose as a job tracking dashboard
+- **Implemented component-specific CSS architecture** - Each component now has its own CSS file to prevent inheritance conflicts and improve maintainability
+- **Cleaned up global App.css** - Stripped down to essential global styles only (body, fonts)
+
+### UI Improvements
+- **Enhanced Navigation** - Added specific CSS classes and improved button styling with distinct colors
+- **Restored main container frame** - Added visual separation between navigation and dashboard content with border, background, and shadow effects
+- **Improved visual hierarchy** - Clean separation between global styles and component-specific styling
+
+### Technical Improvements
+- **Better file organization** - Component-specific CSS files imported directly into components
+- **Eliminated CSS conflicts** - Removed generic button/nav styles that were causing inheritance issues
+- **Semantic CSS classes** - All components now use specific, meaningful class names
+
+## Upcoming Features (Monday) June 23rd, 2025
+- **Sort functionality** - Dropdown with options to sort by Date and Status
+- **Filter functionality** - Dropdown to filter applications by Status, Company, etc.
+- **Enhanced navigation** - Additional nav buttons for improved user experience
+
+## Current Features
+- Dashboard view of all job applications
+- Add new applications
+- View individual application details
+- Update existing applications
+- Clean, responsive interface

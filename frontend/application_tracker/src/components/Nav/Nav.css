@@ -1,13 +1,14 @@
 /* Navigation container */
 .navbar {
-  width: 100%;
+  width: 97.5%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
   gap: 20px;
-  padding: 20px 0;
+  padding: 20px;
   background-color: #f8f9fa;
-  border-bottom: 1px solid #e9ecef;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  border-radius: 10px;
 }
 
 /* Shared button styles */
