@@ -1,7 +1,7 @@
 import '../../App.css';
 import { useState } from 'react';
 
-const Home = ({ allApplications, onCardClick }) => {
+const Dashboard = ({ allApplications, onCardClick }) => {
 
     return (
         <div className='applicationContainer'>
@@ -22,4 +22,4 @@ const Home = ({ allApplications, onCardClick }) => {
     );
 };
 
-export default Home;
+export default Dashboard;

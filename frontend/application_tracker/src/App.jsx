@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import * as applicationService from './services/applicationService';
 import Navbar from "./components/Nav/Nav";
-import Home from "./components/Home/Home";
+import Dashboard from "./components/Dashboard/Dashboard";
 import Create from "./components/Create/Create";
 import Read from './components/Read/Read';
 import UpdateApplication from "./components/UpdateApplication/UpdateApplication"
@@ -9,7 +9,7 @@ import './App.css';
 
 const App = () => {
 
-  const [page, setPage] = useState("Home")
+  const [page, setPage] = useState('Dashboard')
   const [applications, setApplications] = useState([])
   const [selectedApplication, setSelectedApplication] = useState(null)
 
@@ -24,7 +24,7 @@ const App = () => {
 
   const handleBackClick = (application) => {
     setSelectedApplication(null);
-    setPage('Home')
+    setPage('Dashboard')
   }
 
   const handleUpdate = (application) => {
@@ -43,10 +43,10 @@ const App = () => {
 
   return (
     <>
-    <main>
       <Navbar displayPage={displayPage} />
-      {page === "Home" && (
-        <Home allApplications={applications} onCardClick={handleCardClick} />
+    <main>
+      {page === "Dashboard" && (
+        <Dashboard allApplications={applications} onCardClick={handleCardClick} />
       )}
       {page === "Create" && (
         <Create service={applicationService} setApplications={setApplications} />
