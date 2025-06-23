@@ -18,15 +18,8 @@ dotnet8 run
 
 For more details, see the “.NET Configuration” note in the README.
 
-
-
-
-3. Run the application:
-```bash
-dotnet run
-```
-
 The backend will be available at `https://localhost:7000` (or check console output for exact port).
+
 
 ### Frontend (React + Vite)
 
