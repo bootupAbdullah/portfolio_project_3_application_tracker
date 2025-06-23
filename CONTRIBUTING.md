@@ -11,8 +11,15 @@ cd backend/ApplicationTracker
 
 2. Restore dependencies:
 ```bash
-dotnet restore
+dotnet8 run
 ```
+
+#### Note: This project targets .NET 8.0.117. Since the system has multiple .NET SDKs installed and the global default is .NET 9.0.5, a shell alias dotnet8 was configured to explicitly use the correct runtime (dotnet@8 via Homebrew).
+
+For more details, see the “.NET Configuration” note in the README.
+
+
+
 
 3. Run the application:
 ```bash
