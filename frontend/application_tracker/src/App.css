@@ -8,21 +8,24 @@ body {
   display: flex;
   justify-content: center;
 }
+
 .main-card-component {
   display: flex;
-  align-items: flex-start; /* controls application cards inside main container */
-  /* align-items: center; */
-  /* justify-content: center; */
+  align-items: flex-start;
   width: 90vw;
   height: 80vh;
   border: 1px solid #e2e8f0;
   background-color: white;
   border-radius: 10px; 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: transform 0.2s;
+  transform: translate(0px, 0px);
+  box-shadow: 0 2px 8px rgba(100, 116, 139, 0.08);
   padding: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .main-card-component:hover {
-    transform: translate(-1px, -3px);
+  transform: translate(-4px, -8px);
+  box-shadow: 0 8px 24px rgba(100, 116, 139, 0.18);
+  border-color: #64748b;
 }
