@@ -8,7 +8,7 @@ body {
   display: flex;
   justify-content: center;
 }
-main {
+.main-card-component {
   display: flex;
   align-items: flex-start; /* controls application cards inside main container */
   /* align-items: center; */

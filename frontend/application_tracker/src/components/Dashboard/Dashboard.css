@@ -16,33 +16,38 @@
 }
 
 .dashboard-application-card-container:hover {
-    transform: translateX(-3px); 
-    transform: translateY(-5px); 
-}   
+    transform: translate(-1px, -3px);
+}
 
-
-h2 {
+.dashboard-card-company-name {
     color: red; 
     margin-bottom: 10px; 
     font-weight: bold;
     font-size: 1rem;
 }
 
-h3 {
+.dashboard-card-job-title {
     color: #555; 
     margin-bottom: 5px; 
     font-size: 0.875rem; 
 }
 
-h4 {
-    color: #777; 
-    margin-bottom: 5px;
-    font-size: 0.75rem; 
+.dashboard-card-dates {
+    color: #555; 
+    margin-bottom: 5px; 
+    font-size: 0.875rem; 
 }
 
-li {
+.dashboard-card-result {
+   color: #777; 
+   margin-bottom: 5px;
+   font-size: 1em;  
+}
+
+
+/* li {
     list-style: none; 
     margin-bottom: 15px; 
     line-height: 1.5; 
     font-size: 0.875rem; 
-}
+} */

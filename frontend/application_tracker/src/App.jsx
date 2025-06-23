@@ -44,7 +44,7 @@ const App = () => {
   return (
     <>
       <Navbar displayPage={displayPage} />
-    <main>
+    <main className="main-card-component">
       {page === "Dashboard" && (
         <Dashboard allApplications={applications} onCardClick={handleCardClick} />
       )}
