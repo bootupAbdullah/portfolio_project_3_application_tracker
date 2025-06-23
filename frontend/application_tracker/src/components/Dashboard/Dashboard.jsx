@@ -1,21 +1,26 @@
 import '../../App.css';
-import { useState } from 'react';
+import '../Dashboard/Dashboard.css';
 
 const Dashboard = ({ allApplications, onCardClick }) => {
-
     return (
-        <div className='applicationContainer'>
+        <div className="dashboard-container">
             {allApplications.map((application, index) => (
                 <div 
-                    className='applicationContent' 
+                    className="dashboard-application-card-container" 
                     key={index}
                     onClick={() => onCardClick(application)}
                 >
-                    <h2>Company Name: {application.companyName}</h2>
-                    <h2>Job Title: {application.jobTitle}</h2>
-                    <h3>Application Submitted: {application.submissionDate}</h3>
-                    <h3>Response Received: {application.responseDate}</h3>
-                    <h4>Result: {application.result}</h4>
+                    <div className="dashboard-application-card">
+                        <h2 className="dashboard-card-company-name">{application.companyName}</h2>
+                        <h3 className="dashboard-card-job-title">{application.jobTitle}</h3>
+                    </div>
+                    <div className="dashboard-card-dates">
+                        <p className="dashboard-card-submission-date">{application.submissionDate}</p>
+                        <p className="dashboard-card-response-date">{application.responseDate}</p>
+                    </div>
+                    <div className="dashboard-card-result">
+                        <span className="dashboard-result-badge">{application.result}</span>
+                    </div>
                 </div>
             ))}
         </div>

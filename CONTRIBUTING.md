@@ -11,15 +11,15 @@ cd backend/ApplicationTracker
 
 2. Restore dependencies:
 ```bash
-dotnet restore
+dotnet8 run
 ```
 
-3. Run the application:
-```bash
-dotnet run
-```
+#### Note: This project targets .NET 8.0.117. Since the system has multiple .NET SDKs installed and the global default is .NET 9.0.5, a shell alias dotnet8 was configured to explicitly use the correct runtime (dotnet@8 via Homebrew).
+
+For more details, see the “.NET Configuration” note in the README.
 
 The backend will be available at `https://localhost:7000` (or check console output for exact port).
+
 
 ### Frontend (React + Vite)
 

@@ -1,14 +1,28 @@
 /* Navigation container */
-.navbar {
-  width: 97.5%;
+
+.navbar-flex-container {
   display: flex;
   justify-content: flex-end;
+  /* border: 1px solid black */
+}
+
+.navbar {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
   gap: 20px;
-  padding: 20px;
-  background-color: #f8f9fa;
-  border: 1px solid black;
-  margin-bottom: 10px;
+  padding: 20px 20px 20px 20px ;
+  background-color: #eef3f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  margin-bottom: 15px;
   border-radius: 10px;
+}
+
+.navbar:hover {
+    transform: translate(-1px, -3px);
 }
 
 /* Shared button styles */
@@ -24,20 +38,20 @@
 
 /* Dashboard button */
 .nav-dashboard {
-  background-color: #007bff;
+  background-color: #64748b;
   color: white;
 }
 
 .nav-dashboard:hover {
-  background-color: #0056b3;
+  background-color: #475569;
 }
 
 /* Create button */
-.nav-create {
-  background-color: #28a745;
+.nav-add-application {
+  background-color: #64748b;
   color: white;
 }
 
-.nav-create:hover {
-  background-color: #1e7e34;
+.nav-add-application:hover {
+  background-color: #475569;
 }

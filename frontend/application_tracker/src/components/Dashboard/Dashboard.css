@@ -1,0 +1,86 @@
+.dashboard-container {
+    background-color: #f8fafc;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.dashboard-application-card-container {
+    color: #333;
+    height: 30vh;
+    width: 18vw;
+    padding: 20px;
+    margin: 0px 0px 0px 3px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(100, 116, 139, 0.08);
+    transition: all 0.2s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dashboard-application-card-container:hover {
+    transform: translate(-2px, -4px);
+    box-shadow: 0 4px 12px rgba(100, 116, 139, 0.12);
+    border-radius: 8px;
+    border-color: #64748b;
+}
+
+.dashboard-application-card {
+    flex-grow: 1;
+}
+
+.dashboard-card-company-name {
+    color: #1e293b;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.dashboard-card-job-title {
+    color: #64748b;
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.dashboard-card-dates {
+    margin-bottom: 12px;
+}
+
+.dashboard-card-submission-date,
+.dashboard-card-response-date {
+    color: #64748b;
+    font-size: 0.8rem;
+    margin: 2px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.dashboard-card-result {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dashboard-result-badge {
+    background-color: #64748b;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
