@@ -1,42 +1,41 @@
-form {
+.create-form {
     display: flex;
     flex-direction: column;
     color: black;
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid black; 
+    border: 1px solid black;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-label {
+.create-form-label {
     margin-bottom: 10px;
     font-weight: bold;
 }
 
-input[type="text"] {
-    font-style: times;
+.create-form-input {
+    font-family: 'Times New Roman', Times, serif;
     color: black;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1em;
-    background-color: #f9fafb; 
-    width: 100%; 
-    box-sizing: border-box; 
-    transition: border-color 0.3s ease; /
+    background-color: #f9fafb;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
 }
 
-input[type="text"]:focus { 
-    border-color: #007bff; 
-    outline: none; 
+.create-form-input:focus {
+    border-color: #007bff;
+    outline: none;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-
-button {
+.create-form-button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -46,6 +45,6 @@ button {
     font-size: 1em;
 }
 
-button:hover {
+.create-form-button:hover {
     background-color: #0056b3;
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Create.css'; 
 
-const Create = ({service, setApplications}) => {
+const Create = ({ service, setApplications }) => {
     const [companyName, setCompanyName] = useState('');
     const [jobTitle, setJobTitle] = useState('');
     const [submissionDate, setSubmissionDate] = useState('');
@@ -21,11 +21,9 @@ const Create = ({service, setApplications}) => {
         const response = await service.postNewApplication(newApplication);
         console.log(response);
 
-        //Refresh application to add new app
         const updatedData = await service.show();
         setApplications(updatedData);
 
-        // Reset form inputs
         setCompanyName('');
         setJobTitle('');
         setSubmissionDate('');
@@ -34,30 +32,57 @@ const Create = ({service, setApplications}) => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <label>
+        <form onSubmit={handleSubmit} className="create-form">
+            <label className="create-form-label">
                 Company Name:
-                <input type="text" value={companyName} onChange={(e) => setCompanyName(e.target.value)} />
+                <input
+                    type="text"
+                    value={companyName}
+                    onChange={(e) => setCompanyName(e.target.value)}
+                    className="create-form-input"
+                />
             </label>
-            <label>
+            <label className="create-form-label">
                 Job Title:
-                <input type="text" value={jobTitle} onChange={(e) => setJobTitle(e.target.value)} />
+                <input
+                    type="text"
+                    value={jobTitle}
+                    onChange={(e) => setJobTitle(e.target.value)}
+                    className="create-form-input"
+                />
             </label>
-            <label>
+            <label className="create-form-label">
                 Submission Date:
-                <input type="text" value={submissionDate} onChange={(e) => setSubmissionDate(e.target.value)} />
+                <input
+                    type="text"
+                    value={submissionDate}
+                    onChange={(e) => setSubmissionDate(e.target.value)}
+                    className="create-form-input"
+                />
             </label>
-            <label>
+            <label className="create-form-label">
                 Response Date:
-                <input type="text" value={responseDate} onChange={(e) => setResponseDate(e.target.value)} />
+                <input
+                    type="text"
+                    value={responseDate}
+                    onChange={(e) => setResponseDate(e.target.value)}
+                    className="create-form-input"
+                />
             </label>
-            <label>
+            <label className="create-form-label">
                 Result:
-                <input type="text" value={result} onChange={(e) => setResult(e.target.value)} />
+                <input
+                    type="text"
+                    value={result}
+                    onChange={(e) => setResult(e.target.value)}
+                    className="create-form-input"
+                />
             </label>
-            <button type="submit">Create Application</button>
+            <button type="submit" className="create-form-button">
+                Create Application
+            </button>
         </form>
     );
 };
 
-export default Create
+export default Create;

@@ -21,6 +21,10 @@ body {
   background-color: white;
   border-radius: 10px; 
   box-shadow: 5px 5px 5px 5px black;
+  transition: transform 0.2s;
   padding: 10px;
 }
 
+.main-card-component:hover {
+    transform: translate(-1px, -3px);
+}

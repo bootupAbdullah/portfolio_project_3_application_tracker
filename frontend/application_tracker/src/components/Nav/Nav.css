@@ -16,8 +16,13 @@
   border: 1px solid black;
   border-radius: 10px; 
   box-shadow: 10px 5px 10px 0px black;
+  transition: transform 0.2s;
   margin-bottom: 15px;
   border-radius: 10px;
+}
+
+.navbar:hover {
+    transform: translate(-1px, -3px);
 }
 
 /* Shared button styles */
