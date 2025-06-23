@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 body {
-  background-color: white; /* A gentle, light blue background */
+  background-color: #e2c58d;
   font-family: "Roboto Mono", serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -15,10 +15,11 @@ main {
   /* justify-content: center; */
   width: 90vw;
   height: 80vh;
-  border: 1px solid black;
+  border: 2px solid black;
    /* Center and add spacing at the top */
-  background-color: #fff; 
+  background-color: #eef3f9; 
   border-radius: 10px; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 10px 5px black;
+  padding: 10px;
 }
 

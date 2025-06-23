@@ -1,13 +1,24 @@
 /* Navigation container */
-.navbar {
-  width: 97.5%;
+
+.navbar-flex-container {
   display: flex;
   justify-content: flex-end;
+  /* border: 1px solid black */
+}
+
+
+
+.navbar {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
   gap: 20px;
-  padding: 20px;
-  background-color: #f8f9fa;
+  padding: 20px 20px 20px 20px ;
+  background-color: #eef3f9;
   border: 1px solid black;
-  margin-bottom: 10px;
+  border-radius: 10px; 
+  box-shadow: 10px 5px 10px 0px black;
+  margin-bottom: 15px;
   border-radius: 10px;
 }
 
