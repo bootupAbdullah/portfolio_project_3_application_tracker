@@ -35,20 +35,20 @@
 
 /* Dashboard button */
 .nav-dashboard {
-  background-color: #007bff;
+  background-color: #64748b;
   color: white;
 }
 
 .nav-dashboard:hover {
-  background-color: #0056b3;
+  background-color: #475569;
 }
 
 /* Create button */
-.nav-create {
-  background-color: #28a745;
+.nav-add-application {
+  background-color: #64748b;
   color: white;
 }
 
-.nav-create:hover {
-  background-color: #1e7e34;
+.nav-add-application:hover {
+  background-color: #475569;
 }

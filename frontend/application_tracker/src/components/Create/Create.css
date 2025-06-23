@@ -3,11 +3,11 @@ form {
     flex-direction: column;
     color: black;
     max-width: 500px;
-    margin: 0 auto; /* Center the form horizontally */
+    margin: 0 auto;
     padding: 20px;
-    border: 1px solid black; /* Light grey thin border */
-    border-radius: 10px; /* Slightly rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border: 1px solid black; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 label {
@@ -25,8 +25,8 @@ input[type="text"] {
     font-size: 1em;
     background-color: #f9fafb; 
     width: 100%; 
-    box-sizing: border-box; /* Include padding and border in element's width and height */
-    transition: border-color 0.3s ease; /* Smooth transition for border color */
+    box-sizing: border-box; 
+    transition: border-color 0.3s ease; /
 }
 
 input[type="text"]:focus { /* Add styles for focused input */
@@ -35,53 +35,6 @@ input[type="text"]:focus { /* Add styles for focused input */
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add subtle shadow on focus */
 }
 
-.applicationContent {
-    color: #333; /* Slightly softer black for better readability */
-    width: 30vw;
-    height: auto; /* Adjust height based on content */
-    border: 1px solid #ccc; /* Lighter border color */
-    border-radius: 5px; /* Slightly rounded corners */
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: #fff; /* White background for better contrast */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    transition: transform 0.2s; /* Smooth transition for hover effect */
-    overflow: hidden; /* Hide overflow content */
-    text-overflow: ellipsis; /* Add ellipsis for overflow text */
-    white-space: nowrap; 
-
-}
-
-.applicationContent:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
-}
-
-h2 {
-    color: #007bff; /* Blue color for headings */
-    margin-bottom: 10px; /* Spacing below headings */
-    font-weight: bold;
-    font-size: 1rem; /* Smaller font size */
-}
-
-h3 {
-    color: #555; /* Softer color for sub-headings */
-    margin-bottom: 5px; /* Spacing below sub-headings */
-    font-size: 0.875rem; /* Smaller font size */
-}
-
-h4 {
-    color: #777; 
-    margin-bottom: 5px;
-    font-size: 0.75rem; /* Smaller font size */
-}
-
-/* Other text elements */
-li {
-    list-style: none; /* Remove default list styling */
-    margin-bottom: 15px; /* Space between each list item */
-    line-height: 1.5; /* Improve line spacing */
-    font-size: 0.875rem; 
-}
 
 button {
     padding: 10px 20px;
