@@ -15,12 +15,10 @@ body {
   /* justify-content: center; */
   width: 90vw;
   height: 80vh;
-  border: 1px solid black;
-   /* Center and add spacing at the top */
-  /* background-color: #eef3f9;  */
+  border: 1px solid #e2e8f0;
   background-color: white;
   border-radius: 10px; 
-  box-shadow: 5px 5px 5px 5px black;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transition: transform 0.2s;
   padding: 10px;
 }
