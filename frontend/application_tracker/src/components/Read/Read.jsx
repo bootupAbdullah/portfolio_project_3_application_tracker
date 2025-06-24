@@ -1,6 +1,12 @@
 import './Read.css'
 
-const Read = ({ application, onBackClick, handleUpdate }) => {
+const Read = ({ application, onBackClick, handleUpdate, service, setPage, fetchData}) => {
+    
+      const handleDelete = () => {
+        service.deleteRequest(application, setPage, fetchData)
+      }
+      console.log('Deleting application: ', application)
+    
     return (
         <div className="read-container">
             <div className="read-application-card">
@@ -19,6 +25,7 @@ const Read = ({ application, onBackClick, handleUpdate }) => {
             <div className="read-button-group">
                 <button className="read-back-button" onClick={onBackClick}>Back</button>
                 <button className="read-update-button" onClick={handleUpdate}>Update</button>
+                <button className="read-back-button" onClick={handleDelete}>Delete</button>
             </div>
         </div>
     );

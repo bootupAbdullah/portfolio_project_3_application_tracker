@@ -56,4 +56,22 @@ const putRequest = async (id, updatedApplication) => {
     }
 };
 
-export { show, postNewApplication, putRequest };
+const deleteRequest = async (application, setPage, fetchData) => {
+    try {
+        const response = await fetch (`${BASE_URL}/${application.id}`,
+             {
+            method: 'DELETE',
+
+        });
+        if (response.ok) {
+            await fetchData()
+            setPage('Dashboard')
+        } else {
+            console.log('deleteRequest, applicationServices.js has failed.')
+        }
+    } catch (err) {
+        console.log(err);
+    }
+};
+
+export { show, postNewApplication, putRequest, deleteRequest };

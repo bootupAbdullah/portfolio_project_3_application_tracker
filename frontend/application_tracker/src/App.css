@@ -29,3 +29,17 @@ body {
   box-shadow: 0 8px 24px rgba(100, 116, 139, 0.25);
   /* border-color: #64748b; */
 }
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 0 20px;
+}
+
+.app-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+}

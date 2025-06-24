@@ -1,40 +1,18 @@
-# Application Tracker (.NET + JS CRUD App)
+# Application Tracker (React + ASP.NET Core)
 
-This is a full-stack CRUD (Create, Read, Update, Delete) application that allows users to track and manage application submissions. It was built as part of a learning project to explore both backend development using ASP.NET (C#) and frontend design using JavaScript, HTML, and CSS.
+A full-stack job application tracking system built with React and ASP.NET Core. This portfolio project demonstrates modern web development practices with component-driven architecture, RESTful API design, and clean separation of concerns.
 
-## Features
+## ✨ Features
+* Create and view job applications (update/delete functionality in development)
+* Responsive React interface with component-scoped styling
+* Interactive UI elements with hover states and smooth transitions
+* RESTful ASP.NET Core Web API with structured endpoints
+* Clean project architecture with separated frontend/backend directories
 
-- Add, view, update, and delete application entries
-- Frontend built with vanilla JavaScript, CSS, and HTML
-- Backend built using C# and ASP.NET Web API
-- RESTful API integration between frontend and backend
-- Organized structure for frontend and backend folders
-
-## Tech Stack
-
-- **Frontend:** JavaScript, HTML, CSS
-- **Backend:** C#, ASP.NET
-- **Database:** (To be added or specify if used)
-- **Version Control:** Git
-
-
-## Update 6/17/2025
-
-### Immediate Tasks
-- [ ] Github Projects - Start here next meeting (July 1st - Maybe, July 15th, 🔒 and loaded)
-- [ ] Fix npm issues and get app running
-- [ ] Audit current functionality - document what works/broken
-
-### Backend Migration  
-- [ ] Migrate from current backend to Go
-- [ ] Implement user database
-- [ ] Add Auth0 authentication
-- [ ] Build dashboard functionality
-
-### Priority
-Focus on immediate tasks first, then proceed with backend migration.
-
-
+## 🛠️ Tech Stack
+* **Frontend**: React, JSX, CSS Modules
+* **Backend**: C# ASP.NET Core Web API
+* **Development**: Git version control
 
 ## **Last Updated:** June 21, 2025
 
@@ -92,3 +70,51 @@ dotnet8 run
 - View individual application details
 - Update existing applications
 - Clean, responsive interface
+
+# Frontend Update - June 24, 2025
+
+## Styling Overhaul & Design System Implementation
+
+Complete frontend refactor focusing on a cohesive, professional design system with soft neutral tones and consistent component architecture.
+
+### 🎨 Design System
+**Color Palette (Soft Blues/Grays)**
+- **Background:** `#f8fafc` (neutral light)
+- **Cards:** White with `#e2e8f0` borders
+- **Accent:** `#64748b` (slate)
+- **Interactive:** `#475569` (darker slate for hover states)
+
+### 🔄 Component Updates
+
+**Dashboard**
+- Streamlined card content by removing label prefixes
+- Implemented consistent class naming conventions
+- Added subtle box shadows with matching border-radius for card elevation
+- Enhanced hover interactions with lift effects
+
+**Read Component**
+- Unified styling with Dashboard for visual continuity  
+- Redesigned "Back" and "Update" buttons with consistent hover behavior
+- Optimized spacing and removed redundant labels for cleaner layout
+
+**Create Component**
+- Restructured JSX using form groups for improved spacing consistency
+- Upgraded date inputs to `type="date"` for better user experience
+- Applied card-style form design with white background and soft shadows
+- Aligned button styling with global navigation theme
+
+**UpdateApplication** *(Work in Progress)*
+- Established component structure matching existing layout patterns
+- Applied initial styling for MVP functionality
+- Marked as development placeholder
+
+**Navigation**
+- Removed non-standard navbar hover lift behavior
+- Implemented individual button hover effects with lift and drop shadow
+- Ensured smooth transitions align with global design standards
+
+### 📝 Technical Improvements
+- Consistent component-scoped CSS architecture
+- Standardized hover states and transitions
+- Improved accessibility through semantic form structure
+- Enhanced visual hierarchy with professional card-based layout
