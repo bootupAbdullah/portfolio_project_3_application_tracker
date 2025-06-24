@@ -3,10 +3,10 @@ import '../Dashboard/Dashboard.css';
 
 const Dashboard = ({ allApplications, onCardClick }) => {
     return (
-        <div className="dashboard-container">
+        <div className="dashboard-card-container">
             {allApplications.map((application, index) => (
                 <div 
-                    className="dashboard-application-card-container" 
+                    className="dashboard-application-container" 
                     key={index}
                     onClick={() => onCardClick(application)}
                 >

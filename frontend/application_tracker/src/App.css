@@ -26,6 +26,6 @@ body {
 
 .main-card-component:hover {
   transform: translate(-4px, -8px);
-  box-shadow: 0 8px 24px rgba(100, 116, 139, 0.18);
-  border-color: #64748b;
+  box-shadow: 0 8px 24px rgba(100, 116, 139, 0.25);
+  /* border-color: #64748b; */
 }

@@ -11,18 +11,11 @@
   display: flex;
   justify-content: space-evenly;
   gap: 20px;
-  padding: 20px 20px 20px 20px ;
+  padding: 10px;
   background-color: #eef3f9;
   border: 1px solid #e2e8f0;
   border-radius: 10px; 
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
   margin-bottom: 15px;
-  border-radius: 10px;
-}
-
-.navbar:hover {
-    transform: translate(-1px, -3px);
 }
 
 /* Shared button styles */
@@ -34,6 +27,11 @@
   font-size: 16px;
   font-weight: 500;
   transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(100, 116, 139, 0.15);
 }
 
 /* Dashboard button */
