@@ -23,7 +23,7 @@ const App = () => {
   }
 
   const handleBackClick = (application) => {
-    setSelectedApplication(null);
+    setSelectedApplication(application);
     setPage('Dashboard')
   }
 
@@ -58,7 +58,7 @@ const App = () => {
         {page === "Read" && selectedApplication && (
           <Read application={selectedApplication} onBackClick={handleBackClick} handleUpdate={handleUpdate} setPage={setPage} service={applicationService} fetchData={fetchData}/>
         )}
-        {page === "UpdateApplication" && selectedApplication && (
+        {page === "Update" && selectedApplication && (
           <Update application={selectedApplication} onBackClick={handleBackClick} setApplications={setApplications} setPage={setPage} />
         )}
       </main>
