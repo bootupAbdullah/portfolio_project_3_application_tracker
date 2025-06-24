@@ -1,17 +1,24 @@
 import './Read.css'
 
-
 const Read = ({ application, onBackClick, handleUpdate }) => {
     return (
         <div className="read-container">
-            <h2 className="read-company-name">Company Name: {application.companyName}</h2>
-            <h2 className="read-job-title">Job Title: {application.jobTitle}</h2>
-            <h3 className="read-submission-date">Application Submitted: {application.submissionDate}</h3>
-            <h3 className="read-response-date">Response Received: {application.responseDate}</h3>
-            <h4 className="read-result">Result: {application.result}</h4>
+            <div className="read-application-card">
+                <div className="read-card-content">
+                    <h2 className="read-card-company-name">{application.companyName}</h2>
+                    <h3 className="read-card-job-title">{application.jobTitle}</h3>
+                </div>
+                <div className="read-card-dates">
+                    <p className="read-card-submission-date">{application.submissionDate}</p>
+                    <p className="read-card-response-date">{application.responseDate}</p>
+                </div>
+                <div className="read-card-result">
+                    <span className="read-result-badge">{application.result}</span>
+                </div>
+            </div>
             <div className="read-button-group">
-                <button className="read-button" onClick={onBackClick}>Back</button>
-                <button className="read-button" onClick={handleUpdate}>Update</button>
+                <button className="read-back-button" onClick={onBackClick}>Back</button>
+                <button className="read-update-button" onClick={handleUpdate}>Update</button>
             </div>
         </div>
     );
