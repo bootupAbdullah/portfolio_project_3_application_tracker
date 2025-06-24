@@ -20,7 +20,8 @@ const InfoToolTip = () => {
                     <ul>
                         <li>✅ View applications</li>
                         <li>✅ Add new applications</li>
-                        <li>🚧 Update/Delete coming soon</li>
+                        <li>✅ Delete applicatons</li>
+                        <li>🚧 Update coming soon</li>
                     </ul>
                 </div>
             )}

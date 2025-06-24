@@ -67,6 +67,7 @@
     white-space: nowrap;
 }
 
+
 .read-card-result {
     display: flex;
     justify-content: flex-end;
@@ -89,7 +90,8 @@
 }
 
 .read-back-button,
-.read-update-button {
+.read-update-button, 
+.read-delete-button{
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -102,8 +104,18 @@
 }
 
 .read-back-button:hover,
-.read-update-button:hover {
+.read-update-button:hover,
+.read-delete-button:hover {
     background-color: #475569;
     transform: translateY(-1px);
     box-shadow: 0 2px 8px rgba(100, 116, 139, 0.15);
+}
+
+
+.read-delete-button:hover {
+    background-color: red;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(100, 116, 139, 0.15);
+    font-weight: 600;
+    transition: all ease;
 }

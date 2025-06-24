@@ -25,7 +25,7 @@ const Read = ({ application, onBackClick, handleUpdate, service, setPage, fetchD
             <div className="read-button-group">
                 <button className="read-back-button" onClick={onBackClick}>Back</button>
                 <button className="read-update-button" onClick={handleUpdate}>Update</button>
-                <button className="read-back-button" onClick={handleDelete}>Delete</button>
+                <button className="read-delete-button" onClick={handleDelete}>Delete</button>
             </div>
         </div>
     );
