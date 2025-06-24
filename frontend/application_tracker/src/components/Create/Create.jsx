@@ -32,56 +32,66 @@ const Create = ({ service, setApplications }) => {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="create-form">
-            <label className="create-form-label">
-                Company Name:
-                <input
-                    type="text"
-                    value={companyName}
-                    onChange={(e) => setCompanyName(e.target.value)}
-                    className="create-form-input"
-                />
-            </label>
-            <label className="create-form-label">
-                Job Title:
-                <input
-                    type="text"
-                    value={jobTitle}
-                    onChange={(e) => setJobTitle(e.target.value)}
-                    className="create-form-input"
-                />
-            </label>
-            <label className="create-form-label">
-                Submission Date:
-                <input
-                    type="text"
-                    value={submissionDate}
-                    onChange={(e) => setSubmissionDate(e.target.value)}
-                    className="create-form-input"
-                />
-            </label>
-            <label className="create-form-label">
-                Response Date:
-                <input
-                    type="text"
-                    value={responseDate}
-                    onChange={(e) => setResponseDate(e.target.value)}
-                    className="create-form-input"
-                />
-            </label>
-            <label className="create-form-label">
-                Result:
-                <input
-                    type="text"
-                    value={result}
-                    onChange={(e) => setResult(e.target.value)}
-                    className="create-form-input"
-                />
-            </label>
-            <button type="submit" className="create-form-button">
-                Create Application
-            </button>
-        </form>
+        <div className="create-container">
+            <form onSubmit={handleSubmit} className="create-form">
+                <div className="create-form-group">
+                    <label className="create-form-label">Company Name:</label>
+                    <input
+                        type="text"
+                        value={companyName}
+                        onChange={(e) => setCompanyName(e.target.value)}
+                        className="create-form-input"
+                        required
+                    />
+                </div>
+                
+                <div className="create-form-group">
+                    <label className="create-form-label">Job Title:</label>
+                    <input
+                        type="text"
+                        value={jobTitle}
+                        onChange={(e) => setJobTitle(e.target.value)}
+                        className="create-form-input"
+                        required
+                    />
+                </div>
+                
+                <div className="create-form-group">
+                    <label className="create-form-label">Submission Date:</label>
+                    <input
+                        type="date"
+                        value={submissionDate}
+                        onChange={(e) => setSubmissionDate(e.target.value)}
+                        className="create-form-input"
+                        required
+                    />
+                </div>
+                
+                <div className="create-form-group">
+                    <label className="create-form-label">Response Date:</label>
+                    <input
+                        type="date"
+                        value={responseDate}
+                        onChange={(e) => setResponseDate(e.target.value)}
+                        className="create-form-input"
+                    />
+                </div>
+                
+                <div className="create-form-group">
+                    <label className="create-form-label">Result:</label>
+                    <input
+                        type="text"
+                        value={result}
+                        onChange={(e) => setResult(e.target.value)}
+                        className="create-form-input"
+                    />
+                </div>
+                
+                <button type="submit" className="create-form-button">
+                    Create Application
+                </button>
+            </form>
+        </div>
     );
 };
 

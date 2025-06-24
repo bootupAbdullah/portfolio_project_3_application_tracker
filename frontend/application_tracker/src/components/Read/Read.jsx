@@ -1,17 +1,31 @@
 import './Read.css'
 
-
-const Read = ({ application, onBackClick, handleUpdate }) => {
+const Read = ({ application, onBackClick, handleUpdate, service, setPage, fetchData}) => {
+    
+      const handleDelete = () => {
+        service.deleteRequest(application, setPage, fetchData)
+      }
+      console.log('Deleting application: ', application)
+    
     return (
         <div className="read-container">
-            <h2 className="read-company-name">Company Name: {application.companyName}</h2>
-            <h2 className="read-job-title">Job Title: {application.jobTitle}</h2>
-            <h3 className="read-submission-date">Application Submitted: {application.submissionDate}</h3>
-            <h3 className="read-response-date">Response Received: {application.responseDate}</h3>
-            <h4 className="read-result">Result: {application.result}</h4>
+            <div className="read-application-card">
+                <div className="read-card-content">
+                    <h2 className="read-card-company-name">{application.companyName}</h2>
+                    <h3 className="read-card-job-title">{application.jobTitle}</h3>
+                </div>
+                <div className="read-card-dates">
+                    <p className="dashboard-card-submission-date">Applied: {application.submissionDate}</p>
+                    <p className="dashboard-card-response-date">Initial Response: {application.responseDate}</p>
+                </div>
+                <div className="read-card-result">
+                    <span className="read-result-badge">{application.result}</span>
+                </div>
+            </div>
             <div className="read-button-group">
-                <button className="read-button" onClick={onBackClick}>Back</button>
-                <button className="read-button" onClick={handleUpdate}>Update</button>
+                <button className="read-back-button" onClick={onBackClick}>Back</button>
+                <button className="read-update-button" onClick={handleUpdate}>Update</button>
+                <button className="read-delete-button" onClick={handleDelete}>Delete</button>
             </div>
         </div>
     );

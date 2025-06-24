@@ -1,13 +1,13 @@
-.dashboard-container {
-    background-color: #f8fafc;
+.dashboard-card-container {
+    background-color: #f8fafc; 
     border-radius: 8px;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.dashboard-application-card-container {
+.dashboard-application-container {
     color: #333;
     height: 30vh;
     width: 18vw;
@@ -24,7 +24,7 @@
     justify-content: space-between;
 }
 
-.dashboard-application-card-container:hover {
+.dashboard-application-container:hover {
     transform: translate(-2px, -4px);
     box-shadow: 0 4px 12px rgba(100, 116, 139, 0.12);
     border-radius: 8px;

@@ -1,12 +1,25 @@
-import React from 'react';
-import './Nav.css'; // Assuming you have a CSS file for styling
+import './Nav.css';
+import InfoToolTip from './InfoToolTip/InfoToolTip';
 
-const Navbar = ({displayPage}) => {
+const Navbar = ({displayPage, currentPage = "Dashboard"}) => {
     return (
       <div className="navbar-flex-container">
         <nav className="navbar">
-            <button className="nav-button nav-dashboard" onClick={displayPage} value="Dashboard">Dashboard</button>
-            <button className="nav-button nav-add-application" onClick={displayPage} value="Create">Add Application</button>
+            <button 
+              className={`nav-button nav-dashboard ${currentPage === "Dashboard" ? "active" : ""}`} 
+              onClick={displayPage} 
+              value="Dashboard"
+            >
+              Dashboard
+            </button>
+            <button 
+              className={`nav-button nav-add-application ${currentPage === "Create" ? "active" : ""}`} 
+              onClick={displayPage} 
+              value="Create"
+            >
+              Add Application
+            </button>
+            <InfoToolTip />
         </nav>
       </div> 
     );

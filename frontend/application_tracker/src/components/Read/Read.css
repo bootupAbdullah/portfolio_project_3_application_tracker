@@ -1,66 +1,121 @@
 .read-container {
+    background-color: #f8fafc;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.read-application-card {
     color: #333;
     height: 30vh;
     width: 18vw;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 8px;
     padding: 20px;
-    margin: 10px 0px 0px 15px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(100, 116, 139, 0.08);
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.read-application-card:hover {
+    transform: translate(-2px, -4px);
+    box-shadow: 0 4px 12px rgba(100, 116, 139, 0.12);
+    border-color: #64748b;
+}
+
+.read-card-content {
+    flex-grow: 1;
+}
+
+.read-card-company-name {
+    color: #1e293b;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
-.read-container:hover {
-    transform: translate(-1px, -3px);
+.read-card-job-title {
+    color: #64748b;
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
-.read-company-name {
-    color: red;
-    margin-bottom: 10px;
-    font-weight: bold;
-    font-size: 1rem;
+.read-card-dates {
+    margin-bottom: 12px;
 }
 
-.read-job-title {
-    color: #555;
-    margin-bottom: 5px;
-    font-size: 0.875rem;
+.read-card-submission-date,
+.read-card-response-date {
+    color: #64748b;
+    font-size: 0.8rem;
+    margin: 2px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
-.read-submission-date,
-.read-response-date {
-    color: #555;
-    margin-bottom: 5px;
-    font-size: 1rem;
+
+.read-card-result {
+    display: flex;
+    justify-content: flex-end;
 }
 
-.read-result {
-    color: #777;
-    margin-bottom: 5px;
-    font-size: 1rem;
+.read-result-badge {
+    background-color: #64748b;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .read-button-group {
-    margin-top: 10px;
     display: flex;
-    gap: 10px;
+    gap: 12px;
 }
 
-.read-button {
-    padding: 8px 16px;
-    background-color: #007bff;
-    color: white;
+.read-back-button,
+.read-update-button, 
+.read-delete-button{
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 0.875rem;
-    transition: background-color 0.2s ease;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    background-color: #64748b;
+    color: white;
 }
 
-.read-button:hover {
-    background-color: #0056b3;
+.read-back-button:hover,
+.read-update-button:hover,
+.read-delete-button:hover {
+    background-color: #475569;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(100, 116, 139, 0.15);
+}
+
+
+.read-delete-button:hover {
+    background-color: red;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(100, 116, 139, 0.15);
+    font-weight: 600;
+    transition: all ease;
 }
