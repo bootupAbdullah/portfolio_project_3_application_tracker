@@ -9,9 +9,11 @@ public static class ApplicationService
     static ApplicationService()
     {
         Applications = new List<Application>
-        {
-            new Application { Id = 1, CompanyName = "Booz Allen", JobTitle = "Back-End Developer, Jr", SubmissionDate = "1-22-25", ResponseDate = "1-23-25", Result = "Pending" },
-        };
+{
+   new Application { Id = 1, CompanyName = "Tech Solutions Inc", JobTitle = "Software Developer", SubmissionDate = "1-15-25", ResponseDate = "1-18-25", Result = "Interview Scheduled" },
+   new Application { Id = 2, CompanyName = "Digital Innovations", JobTitle = "Frontend Developer", SubmissionDate = "1-20-25", ResponseDate = "1-22-25", Result = "Pending" },
+   new Application { Id = 3, CompanyName = "Cloud Systems Corp", JobTitle = "Full Stack Developer", SubmissionDate = "1-25-25", ResponseDate = "", Result = "No Response" }
+};
     }
 
     public static List<Application> GetAll() => Applications;
