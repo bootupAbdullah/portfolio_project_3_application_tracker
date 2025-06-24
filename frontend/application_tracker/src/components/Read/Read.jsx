@@ -15,8 +15,8 @@ const Read = ({ application, onBackClick, handleUpdate, service, setPage, fetchD
                     <h3 className="read-card-job-title">{application.jobTitle}</h3>
                 </div>
                 <div className="read-card-dates">
-                    <p className="read-card-submission-date">{application.submissionDate}</p>
-                    <p className="read-card-response-date">{application.responseDate}</p>
+                    <p className="dashboard-card-submission-date">Applied: {application.submissionDate}</p>
+                    <p className="dashboard-card-response-date">Initial Response: {application.responseDate}</p>
                 </div>
                 <div className="read-card-result">
                     <span className="read-result-badge">{application.result}</span>
