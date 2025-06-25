@@ -5,11 +5,12 @@
 We take security issues seriously. Please report vulnerabilities responsibly.
 
 ### For Critical/High Severity Issues
-- **Email**: security@yourproject.com
+- **Email**: akdev.co@gmail.com
 - **Expected Response**: Within 48 hours
 
 ### For Low/Medium Severity Issues
-- Use GitHub's [private vulnerability reporting](https://github.com/yourorg/yourrepo/security/advisories/new)
+
+- Use GitHub's [private vulnerability reporting](https://github.com/bootupAbdullah/portfolio_project_3_application_tracker/security/advisories/new)
 - Or create a public issue with the 🔒 Security template
 
 ### What to Include
