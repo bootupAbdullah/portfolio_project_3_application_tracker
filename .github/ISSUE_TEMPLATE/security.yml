@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        **⚠️ Important:** For critical/high severity vulnerabilities, please email security@yourproject.com instead of creating a public issue. See our [Security Policy](../SECURITY.md) for details.
+        **⚠️ Important:** For critical/high severity vulnerabilities, please email akddev.co@gmail.com instead of creating a public issue. See our [Security Policy](../SECURITY.md) for details.
   - type: textarea
     id: vulnerability-description
     attributes:
