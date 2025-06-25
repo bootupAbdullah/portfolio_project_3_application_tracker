@@ -1,6 +1,6 @@
 # 📂 Application Tracker (React + ASP.NET Core)
 
-![Project Logo](./assets/logo.png) <!-- Optional: Replace with your own logo or remove this line -->
+<!-- ![Project Logo](./assets/logo.png)  -->
 
 [![MVP Status](https://img.shields.io/badge/status-MVP-green)]()
 [![License](https://img.shields.io/github/license/bootupAbdullah/portfolio_project_3_application_tracker)]()
