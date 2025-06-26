@@ -1,8 +1,6 @@
-const BASE_URL = `http://localhost:5150/application`;
-
 const show = async () => {
     try {
-      const res = await fetch(BASE_URL);
+      const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}`)
       if (!res.ok) {
         throw new Error(`HTTP error! status: ${res.status}`);
       }
@@ -16,7 +14,7 @@ const show = async () => {
 
 const postNewApplication = async (newApplication) => {
     try {
-        const response = await fetch(BASE_URL, {
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -37,7 +35,7 @@ const postNewApplication = async (newApplication) => {
 
 const putRequest = async (id, updatedApplication) => {
     try {
-        const response = await fetch(`${BASE_URL}/${id}`, {
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
@@ -58,7 +56,7 @@ const putRequest = async (id, updatedApplication) => {
 
 const deleteRequest = async (application, setPage, fetchData) => {
     try {
-        const response = await fetch (`${BASE_URL}/${application.id}`,
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/${application.id}`,
              {
             method: 'DELETE',
 
