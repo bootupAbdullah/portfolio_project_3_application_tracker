@@ -1,8 +1,8 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /app
 
-# Copy project files
-COPY . .
+# Copy project files from the correct path
+COPY backend/ApplicationTracker/ .
 
 # Restore and build
 RUN dotnet restore "ApplicationTracker.csproj"

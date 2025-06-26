@@ -4,4 +4,3 @@ dockerfilePath = "backend/ApplicationTracker/Dockerfile"
 
 [deploy]
 startCommand = "dotnet ApplicationTracker.dll"
-rootDirectory = "backend/ApplicationTracker"
