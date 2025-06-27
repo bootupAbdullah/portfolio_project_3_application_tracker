@@ -4,16 +4,15 @@
   display: flex;
   justify-content: flex-end;
   /* border: 1px solid black; */
-  width: 30%;
+  width: 50%;
 }
 
 .navbar {
   display: flex;
   justify-content: space-evenly;
-  gap: 25px;
-  padding: 12px;
+  padding: 12px 0px 12px 15px;
   background-color: #eef3f9;
-  width: 100%;
+  width: 60%;
   /* border: 1px solid black; */
   border: 1px solid #e2e8f0;
   border-radius: 10px; 
@@ -30,7 +29,6 @@
   font-size: 16px;
   font-weight: 500;
   transition: all 0.3s ease;
-  position: relative;
 }
 
 .nav-button:hover {

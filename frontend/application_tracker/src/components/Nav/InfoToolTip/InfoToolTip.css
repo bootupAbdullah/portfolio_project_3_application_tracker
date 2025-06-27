@@ -1,7 +1,11 @@
 .info-tooltip-container {
     position: relative;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid black; */
 }
+
 
 .info-icon {
     background: none;
@@ -16,6 +20,7 @@
 .info-icon:hover {
     background-color: rgba(107, 114, 128, 0.1);
 }
+
 
 .tooltip {
     position: absolute;
@@ -48,3 +53,4 @@
     font-size: 13px;
     color: #6b7280;
 }
+

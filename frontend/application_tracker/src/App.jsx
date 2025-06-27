@@ -45,7 +45,10 @@ const App = () => {
   return (
     <>
       <header className="app-header">
+        <div className="header-text-content">
         <h1 className="app-title">Application Tracker</h1>
+        <p className="app-subtitle">Feel free to explore with test data - please delete any entries you add</p>
+        </div>
         <Navbar displayPage={displayPage} currentPage={page} />
       </header>
       <main className="main-card-component">
