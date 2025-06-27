@@ -8,14 +8,13 @@ builder.Services.AddCors(options =>
     options.AddPolicy(name: MyAllowSpecificOrigins,
                       policy  =>
                       {
-                          policy.WithOrigins("http://localhost:5173")
+                          policy.WithOrigins("https://application-tracker-dash.netlify.app")
                           .AllowAnyHeader()
                           .AllowAnyMethod();
                       });
 });
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -28,7 +27,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-// app.UseHttpsRedirection();
 
 app.UseCors(MyAllowSpecificOrigins);
 
