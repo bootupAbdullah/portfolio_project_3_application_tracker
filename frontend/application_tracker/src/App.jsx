@@ -5,6 +5,7 @@ import Dashboard from "./components/Dashboard/Dashboard";
 import Create from "./components/Create/Create";
 import Read from "./components/Read/Read";
 import Update from "./components/UpdateApplication/Update"
+import Footer from "./components/Footer/Footer"
 import "./App.css";
 
 const App = () => {
@@ -65,6 +66,7 @@ const App = () => {
           <Update application={selectedApplication} onBackClick={handleBackClick} setApplications={setApplications} setPage={setPage} />
         )}
       </main>
+      <Footer> </Footer>
     </>
   );
 }

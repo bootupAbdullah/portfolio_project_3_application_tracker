@@ -1,0 +1,49 @@
+
+.app-footer{
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: baseline; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 99%;
+    /* border: 1px solid black; */
+    margin-top: 5px;
+}
+
+.github-container {
+  position: relative;
+}
+
+.social-icon-basic-footer {
+  width: 25px;
+  height: 25px;
+  filter: invert(0);
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+
+.github-view-source-tooltip {
+  position: absolute;
+  bottom: 35px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 8px 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+.tooltip-text{
+    margin: 0 0 8px 0;
+    font-weight: 600;
+    color: #374151;
+    font-size: 10px;
+}
