@@ -5,6 +5,7 @@
 [![MVP Status](https://img.shields.io/badge/status-MVP-green)]()
 [![License](https://img.shields.io/github/license/bootupAbdullah/portfolio_project_3_application_tracker)]()
 [![Last Commit](https://img.shields.io/github/last-commit/bootupAbdullah/portfolio_project_3_application_tracker)]()
+[![Live Demo](https://img.shields.io/badge/demo-live-blue)](https://application-tracker-dash.netlify.app/)
 
 A full-stack job application tracking system built with React and ASP.NET Core. This portfolio project demonstrates modern web development practices with component-driven architecture, RESTful API design, and clean separation of concerns.
 
