@@ -6,6 +6,7 @@ const Footer = () => {
   
   return (
     <footer className='app-footer'>
+      <p className='footer-text'>© {new Date().getFullYear()} akddev.co &mdash; All rights reserved.</p>
       <div className='github-container'
         onMouseEnter={() => setShowFooterTooltip(true)}
         onMouseLeave={() => setShowFooterTooltip(false)}
