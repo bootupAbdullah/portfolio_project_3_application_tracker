@@ -9,12 +9,7 @@ const InfoToolTip = () => {
             onMouseEnter={() => setShowTooltip(true)}
             onMouseLeave={() => setShowTooltip(false)}
         >
-            <button 
-                className="info-icon"
-                onClick={() => setShowTooltip(!showTooltip)}
-            >
-                ℹ️
-            </button>
+            <div className="info-icon"> ℹ️ </div>
             {showTooltip && (
                 <div className="tooltip">
                     <p>Current features:</p>
