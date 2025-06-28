@@ -84,3 +84,25 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
+
+
+
+/* <-------------- media queires ---------------> */
+
+@media (max-width: 480px) {
+  .dashboard-card-container {
+    max-height: 60vh;
+    overflow-y: auto;
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; */
+  }
+  
+  .dashboard-application-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 200px;
+  }
+}

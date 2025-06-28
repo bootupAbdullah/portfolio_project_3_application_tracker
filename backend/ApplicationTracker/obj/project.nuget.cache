@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zVacQGN+W4A=",
+  "dgSpecHash": "sW3iqvEtK0pJIgfc4Uj/w7eLi5LnIj8EFTu4TnBEo3DRo3PhuY2TmSFPGsRLBPuRI7avBbBBFixrnY61MW0xHw==",
   "success": true,
   "projectFilePath": "/Users/akd_dev/Programming/portfolio_projetcs/bootcamp_projects_for_display/portfolio_project_3_application_tracker/backend/ApplicationTracker/ApplicationTracker.csproj",
   "expectedPackageFiles": [
@@ -9,10 +9,7 @@
     "/Users/akd_dev/.nuget/packages/swashbuckle.aspnetcore/9.0.1/swashbuckle.aspnetcore.9.0.1.nupkg.sha512",
     "/Users/akd_dev/.nuget/packages/swashbuckle.aspnetcore.swagger/9.0.1/swashbuckle.aspnetcore.swagger.9.0.1.nupkg.sha512",
     "/Users/akd_dev/.nuget/packages/swashbuckle.aspnetcore.swaggergen/9.0.1/swashbuckle.aspnetcore.swaggergen.9.0.1.nupkg.sha512",
-    "/Users/akd_dev/.nuget/packages/swashbuckle.aspnetcore.swaggerui/9.0.1/swashbuckle.aspnetcore.swaggerui.9.0.1.nupkg.sha512",
-    "/Users/akd_dev/.nuget/packages/microsoft.netcore.app.ref/8.0.16/microsoft.netcore.app.ref.8.0.16.nupkg.sha512",
-    "/Users/akd_dev/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.16/microsoft.aspnetcore.app.ref.8.0.16.nupkg.sha512",
-    "/Users/akd_dev/.nuget/packages/microsoft.netcore.app.host.osx-arm64/8.0.16/microsoft.netcore.app.host.osx-arm64.8.0.16.nupkg.sha512"
+    "/Users/akd_dev/.nuget/packages/swashbuckle.aspnetcore.swaggerui/9.0.1/swashbuckle.aspnetcore.swaggerui.9.0.1.nupkg.sha512"
   ],
   "logs": []
 }

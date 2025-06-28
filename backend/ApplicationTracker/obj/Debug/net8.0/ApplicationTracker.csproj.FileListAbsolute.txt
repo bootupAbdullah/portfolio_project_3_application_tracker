@@ -67,3 +67,4 @@
 /Users/akd_dev/Programming/portfolio_projetcs/bootcamp_projects_for_display/portfolio_project_3_application_tracker/backend/ApplicationTracker/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.ApplicationTracker.props
 /Users/akd_dev/Programming/portfolio_projetcs/bootcamp_projects_for_display/portfolio_project_3_application_tracker/backend/ApplicationTracker/obj/Debug/net8.0/staticwebassets.pack.json
 /Users/akd_dev/Programming/portfolio_projetcs/bootcamp_projects_for_display/portfolio_project_3_application_tracker/backend/ApplicationTracker/obj/Debug/net8.0/ApplicationTracker.csproj.CopyComplete
+/Users/akd_dev/Programming/portfolio_projetcs/bootcamp_projects_for_display/portfolio_project_3_application_tracker/backend/ApplicationTracker/bin/Debug/net8.0/global.json
