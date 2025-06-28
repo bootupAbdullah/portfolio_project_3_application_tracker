@@ -4,10 +4,15 @@ import './InfoToolTip.css';
 const InfoToolTip = () => {
     const [showTooltip, setShowTooltip] = useState(false);
 
+    const toggleToolTip = () => {
+        setShowTooltip(!showTooltip)
+    }
+
     return (
         <div className="info-tooltip-container"
             onMouseEnter={() => setShowTooltip(true)}
             onMouseLeave={() => setShowTooltip(false)}
+            onClick={toggleToolTip}
         >
             <div className="info-icon"> ℹ️ </div>
             {showTooltip && (
