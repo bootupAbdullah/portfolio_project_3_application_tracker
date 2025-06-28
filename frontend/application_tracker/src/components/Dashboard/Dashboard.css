@@ -106,3 +106,20 @@
     min-height: 200px;
   }
 }
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .dashboard-application-container {
+    width: 28vw; /* slightly wider cards for better spacing */
+    height: 28vh; /* proportional height */
+  }
+}
+
+
+/* <-------------- media queires (768×1024) ---------------> */
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .dashboard-card-container {
+    justify-content: center;
+  }
+}

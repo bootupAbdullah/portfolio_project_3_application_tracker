@@ -91,3 +91,18 @@
     font-size: 14px;
   }
 }
+
+
+
+/* <-------------- media queires (768×1024) ---------------> */
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .navbar-flex-container {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .navbar {
+    width: 400px;
+  }
+}
