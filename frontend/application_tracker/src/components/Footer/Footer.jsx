@@ -17,7 +17,7 @@ const Footer = () => {
         >
           <img 
             className='social-icon-basic-footer'
-            src="github-142.svg"
+            src="images/svg/github-142.svg"
             alt="GitHub"
           />
         </a>

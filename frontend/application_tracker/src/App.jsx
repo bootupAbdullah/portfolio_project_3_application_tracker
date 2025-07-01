@@ -47,9 +47,14 @@ const App = () => {
     <>
       <header className="app-header">
         <div className="header-text-content">
-        <h1 className="app-title">Application Tracker</h1>
-        <p className="app-subtitle">Feel free to explore with test data - please delete any entries you add</p>
-        </div>
+  <div className="title-row">
+    <h1 className="app-title">Application Tracker</h1>
+    <button className="refresh-button">
+      <img className="image-svg-refresh" src="/images/svg/refresh.svg" alt="Reset demo data" />  
+    </button>
+  </div>
+  <p className="app-subtitle">Feel free to explore with test data - please delete any entries you add</p>
+</div>
         <Navbar displayPage={displayPage} currentPage={page} />
       </header>
       <main className="main-card-component">
