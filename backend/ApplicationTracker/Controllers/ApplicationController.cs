@@ -2,7 +2,7 @@ using ApplicationTracker.Models;
 using ApplicationTracker.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ContosoPizza.Controllers;
+namespace ApplicationTracker.Controllers;
 
 [ApiController]
 [Route("[controller]")]
@@ -12,55 +12,85 @@ public class ApplicationController : ControllerBase
     {
     }
 
-[HttpGet]
-public ActionResult<List<Application>> GetAll() =>
-    ApplicationService.GetAll();
 
-[HttpGet("{id}")]
-public ActionResult<Application> Get(int id)
-{
-    var application = ApplicationService.Get(id);
+    //Helper method to get or create session ID
+    private string GetSessionId()
+    {
+        var sessionId = HttpContext.Session.GetString("SessionId");
+        if (string.IsNullOrEmpty(sessionId))
+        {
+            sessionId = Guid.NewGuid().ToString();
+            HttpContext.Session.SetString("SessionId", sessionId);
+        }
+        return sessionId;
+    }
 
-        if(application == null)
+    [HttpGet]
+    public ActionResult<List<Application>> GetAll()
+    {
+        var sessionId = GetSessionId();
+        return ApplicationService.GetAll(sessionId);
+    }
+
+
+    [HttpGet("{id}")]
+    public ActionResult<Application> Get(int id)
+    {
+        var sessionId = GetSessionId();
+        var application = ApplicationService.Get(id, sessionId);
+
+        if (application == null)
             return NotFound();
-        
+
         return application;
+    }
+
+    [HttpPost]
+    public IActionResult Create(Application application)
+    {
+        var sessionId = GetSessionId();
+        ApplicationService.Add(application, sessionId);
+        return CreatedAtAction(nameof(Get), new { id = application.Id }, application);
+    }
+
+
+    [HttpPut("{id}")]
+    public IActionResult Update(int id, Application application)
+    {
+        if (id != application.Id)
+            return BadRequest();
+
+        var sessionId = GetSessionId();
+        var existingApplication = ApplicationService.Get(id, sessionId);
+        if (existingApplication is null)
+            return NotFound();
+
+        ApplicationService.Update(application, sessionId);
+        return NoContent();
+    }
+
+    [HttpDelete("{id}")]
+    public IActionResult Delete(int id)
+    {
+        var sessionId = GetSessionId();
+        var application = ApplicationService.Get(id, sessionId);
+
+        if (application is null)
+            return NotFound();
+
+        ApplicationService.Delete(id, sessionId);
+
+        return NoContent();
+    }
+
+    // Reset endpoint for demo
+    [HttpDelete("reset")]
+    public IActionResult Reset()
+    {
+        var sessionId = GetSessionId();
+        ApplicationService.ResetAll(sessionId);
+        return Ok(new { message = "Session data reset sucessfully" });
+    }
+
 }
 
-[HttpPost]
-public IActionResult Create(Application application)
-{            
-    ApplicationService.Add(application);
-    return CreatedAtAction(nameof(Get), new { id = application.Id }, application);
-}
- 
- 
-[HttpPut("{id}")]
-public IActionResult Update(int id, Application application)
-{
-    if (id != application.Id)
-        return BadRequest();
-           
-    var existingPizza = ApplicationService.Get(id);
-    if(existingPizza is null)
-        return NotFound();
-   
-    ApplicationService.Update(application);           
-   
-    return NoContent();
-}
-
-[HttpDelete("{id}")]
-public IActionResult Delete(int id)
-{
-    var pizza = ApplicationService.Get(id);
-   
-    if (pizza is null)
-        return NotFound();
-       
-    ApplicationService.Delete(id);
-   
-    return NoContent();
-}
-
-}

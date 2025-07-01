@@ -4,43 +4,79 @@ namespace ApplicationTracker.Services;
 
 public static class ApplicationService
 {
-    static List<Application> Applications { get; }
-    static int nextId = 3;
-    static ApplicationService()
+    static Dictionary<string, List<Application>> SessionApplications { get; } = new();
+    static Dictionary<string, int> SessionNextIds { get; } = new();
+
+    private static List<Application> GetSessionApplications(string sessionId)
     {
-        Applications = new List<Application>
-{
-   new Application { Id = 1, CompanyName = "Tech Solutions Inc", JobTitle = "Software Developer", SubmissionDate = "1-15-25", ResponseDate = "1-18-25", Result = "Interview Scheduled" },
-   new Application { Id = 2, CompanyName = "Digital Innovations", JobTitle = "Frontend Developer", SubmissionDate = "1-20-25", ResponseDate = "1-22-25", Result = "Pending" },
-   new Application { Id = 3, CompanyName = "Cloud Systems Corp", JobTitle = "Full Stack Developer", SubmissionDate = "1-25-25", ResponseDate = "", Result = "No Response" }
-};
+        if (!SessionApplications.ContainsKey(sessionId))
+        {
+            SessionApplications[sessionId] = new List<Application>
+            {
+                new Application { Id = 1, CompanyName = "Tech Solutions Inc", JobTitle = "Software Developer", SubmissionDate = "1-15-25", ResponseDate = "1-18-25", Result = "Interview Scheduled" },
+                new Application { Id = 2, CompanyName = "Digital Innovations", JobTitle = "Frontend Developer", SubmissionDate = "1-20-25", ResponseDate = "1-22-25", Result = "Pending" },
+                new Application { Id = 3, CompanyName = "Cloud Systems Corp", JobTitle = "Full Stack Developer", SubmissionDate = "1-25-25", ResponseDate = "", Result = "No Response" }
+            };
+            SessionNextIds[sessionId] = 4;
+
+        }
+        return SessionApplications[sessionId];
+
     }
 
-    public static List<Application> GetAll() => Applications;
-
-    public static Application? Get(int id) => Applications.FirstOrDefault(a => a.Id == id);
-
-    public static void Add(Application application)
+    private static int GetNextId(string sessionId)
     {
-        application.Id = nextId++;
-        Applications.Add(application);
+        if (!SessionNextIds.ContainsKey(sessionId))
+            SessionNextIds[sessionId] = 4;
+
+        return SessionNextIds[sessionId]++;
     }
 
-    public static void Delete(int id)
+    public static List<Application> GetAll(string sessionId) => GetSessionApplications(sessionId);
+
+    public static Application? Get(int id, string sessionId) =>
+        GetSessionApplications(sessionId).FirstOrDefault(a => a.Id == id);
+
+    public static void Add(Application application, string sessionId)
     {
-        var applicationToDelete = Get(id);
-        if(applicationToDelete is null)
+        application.Id = GetNextId(sessionId);
+        GetSessionApplications(sessionId).Add(application);
+    }
+
+    public static void Delete(int id, string sessionId)
+    {
+        var applications = GetSessionApplications(sessionId);
+        var applicationToDelete = applications.FirstOrDefault(a => a.Id == id);
+
+        if (applicationToDelete is null)
             return;
 
-        Applications.Remove(applicationToDelete);
+        applications.Remove(applicationToDelete);
     }
 
-    public static void Update(Application application)
+    public static void Update(Application application, string sessionId)
     {
-        var index = Applications.FindIndex(a => a.Id == application.Id);
-        if(index == -1)
+
+        var applications = GetSessionApplications(sessionId);
+        var index = applications.FindIndex(a => a.Id == application.Id);
+
+        if (index == -1)
             return;
 
-        Applications[index] = application;
+        applications[index] = application;
     }
-}
+
+    public static void ResetAll(string sessionId)
+    {
+        if (SessionApplications.ContainsKey(sessionId))
+        {
+            SessionApplications.Remove(sessionId);
+            SessionNextIds.Remove(sessionId);
+        }
+    }
+
+
+
+
+ }
+
