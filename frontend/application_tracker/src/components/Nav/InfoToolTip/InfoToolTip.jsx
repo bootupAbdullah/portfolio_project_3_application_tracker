@@ -19,10 +19,9 @@ const InfoToolTip = () => {
                 <div className="tooltip">
                     <p>Current features:</p>
                     <ul>
-                        <li>✅ View applications</li>
-                        <li>✅ Add new applications</li>
-                        <li>✅ Delete applicatons</li>
-                        <li>🚧 Update coming soon</li>
+                        <li>✅ Full CRUD operations</li>
+                        <li>✅ Reset demo data</li>
+                        <li>✅ Multi-user sessions</li>
                     </ul>
                 </div>
             )}
