@@ -39,6 +39,15 @@ const App = () => {
       if (data) setApplications(data);
     };
 
+  const handleReset = async () => {
+    try {
+      await applicationService.resetApplications();
+      await fetchData();
+    } catch (error) {
+      console.error('Reset failed:', error);
+    }
+  };
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -49,7 +58,7 @@ const App = () => {
         <div className="header-text-content">
   <div className="title-row">
     <h1 className="app-title">Application Tracker</h1>
-    <button className="refresh-button">
+    <button className="refresh-button" onClick={handleReset}>
       <img className="image-svg-refresh" src="/images/svg/refresh.svg" alt="Reset demo data" />  
     </button>
   </div>
