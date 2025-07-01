@@ -62,7 +62,7 @@ const App = () => {
       <img className="image-svg-refresh" src="/images/svg/refresh.svg" alt="Reset demo data" />  
     </button>
   </div>
-  <p className="app-subtitle">Feel free to explore with test data - please delete any entries you add</p>
+  <p className="app-subtitle">Feel free to explore - your session is private and won't affect other users</p>
 </div>
         <Navbar displayPage={displayPage} currentPage={page} />
       </header>
