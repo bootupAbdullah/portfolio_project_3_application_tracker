@@ -5,8 +5,7 @@ const Read = ({ application, onBackClick, handleUpdate, service, setPage, fetchD
       const handleDelete = () => {
         service.deleteRequest(application, setPage, fetchData)
       }
-      console.log('Deleting application: ', application)
-    
+
     return (
         <div className="read-container">
             <div className="read-application-card">
@@ -24,7 +23,7 @@ const Read = ({ application, onBackClick, handleUpdate, service, setPage, fetchD
             </div>
             <div className="read-button-group">
                 <button className="read-back-button" onClick={onBackClick}>Back</button>
-                <button className="read-update-button" onClick={handleUpdate}>Update</button>
+                <button className="read-update-button" onClick={() => handleUpdate(application)}>Update</button>
                 <button className="read-delete-button" onClick={handleDelete}>Delete</button>
             </div>
         </div>

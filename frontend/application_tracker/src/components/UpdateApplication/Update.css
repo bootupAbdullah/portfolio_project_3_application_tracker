@@ -1,54 +1,112 @@
 .update-container {
-    /* background-color: #f5f5f5; */
-    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
     width: 100%;
-    height: 100%;
-    /* border: 1px solid black; */
-
 }
 
-.update-content {
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: white;
+.update-form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 40px;
-    border-radius: 8px;
-    /* border: 1px solid #e2e8f0; */
+    color: #333;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
     box-shadow: 0 2px 8px rgba(100, 116, 139, 0.08);
-    transition: all 0.2s ease;
-}
-
-.update-content:hover {
-    transform: translate(-2px, -4px);
-    box-shadow: 0 4px 12px rgba(100, 116, 139, 0.12);
-    border-color: #64748b;
+    gap: 20px;
 }
 
 .update-title {
     font-size: 24px;
     font-weight: 600;
-    color: #111827;
-    margin: 5px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    color: #1e293b;
+    margin: 0 0 10px 0;
+    text-align: center;
 }
-.update-back-button {
-    padding: 10px 20px;
+
+.update-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.update-form-label {
+    font-weight: 600;
+    color: #1e293b;
+    font-size: 14px;
+}
+
+.update-form-input {
+    font-family: "Roboto Mono", serif;
+    color: #333;
+    padding: 12px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: white;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.update-form-input:focus {
+    border-color: #64748b;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(100, 116, 139, 0.1);
+}
+
+.update-button-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.update-back-button,
+.update-submit-button {
+    flex: 1;
+    padding: 12px 24px;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
+}
+
+.update-back-button {
+    background-color: #f8fafc;
+    color: #475569;
+    border: 1px solid #e2e8f0;
+}
+
+.update-back-button:hover {
+    background-color: #f1f5f9;
+    border-color: #cbd5e1;
+}
+
+.update-submit-button {
     background-color: #64748b;
     color: white;
 }
 
-.update-back-button:hover {
-    background-color: #475569
+.update-submit-button:hover {
+    background-color: #475569;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(100, 116, 139, 0.15);
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+    .update-container {
+        padding: 10px;
+    }
+    
+    .update-form {
+        padding: 20px;
+        border-radius: 8px;
+    }
+    
+    .update-button-group {
+        flex-direction: column;
+    }
 }
