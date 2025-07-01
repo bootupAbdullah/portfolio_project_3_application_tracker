@@ -58,7 +58,7 @@ const App = () => {
         <div className="header-text-content">
   <div className="title-row">
     <h1 className="app-title">Application Tracker</h1>
-    <button className="refresh-button" onClick={handleReset}>
+    <button className="refresh-button" onClick={handleReset} title="Reset demo data">
       <img className="image-svg-refresh" src="/images/svg/refresh.svg" alt="Reset demo data" />  
     </button>
   </div>
