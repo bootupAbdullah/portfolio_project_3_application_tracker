@@ -53,13 +53,15 @@
 }
 
 
+/* <-------------- Mobile (≤480px) ---------------> */
+
 @media (max-width: 480px) {
-  .app-footer {
-    padding: 6px 0; 
-    min-height: 35px; 
-  }
-  
-  .footer-text {
-    font-size: 12px; 
-  }
+ .app-footer {
+   padding: 6px 0; 
+   min-height: 35px; 
+ }
+ 
+ .footer-text {
+   font-size: 12px; 
+ }
 }

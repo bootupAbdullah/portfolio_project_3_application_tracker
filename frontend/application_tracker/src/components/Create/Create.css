@@ -68,15 +68,15 @@
     box-shadow: 0 2px 8px rgba(100, 116, 139, 0.15);
 }
 
-/* Mobile responsive */
+/* <-------------- Mobile (≤480px) ---------------> */
 @media (max-width: 480px) {
-    .create-container {
-        padding: 10px;
-    }
-    
-    .create-form {
-        padding: 20px;
-        border-radius: 8px;
-        min-width: 50%;
-    }
+   .create-container {
+       padding: 10px;
+   }
+   
+   .create-form {
+       padding: 20px;
+       border-radius: 8px;
+       min-width: 50%;
+   }
 }

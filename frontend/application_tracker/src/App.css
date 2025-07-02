@@ -125,11 +125,8 @@ body {
 }
 
 
-/* <-------------- media queires ---------------> */
-
-
+/* <-------------- Mobile (≤480px) ---------------> */
 @media (max-width: 480px) {
-
   .app-subtitle {
     display: none;
   }
@@ -142,12 +139,14 @@ body {
   }
 }
 
+/* <-------------- Tablet (481px-768px) ---------------> */
 @media (min-width: 481px) and (max-width: 768px) {
   .app-title {
     font-size: 1.8rem;
   }  
 }  
 
+/* <-------------- Tablet to Small Desktop (481px-1024px) ---------------> */
 @media (min-width: 481px) and (max-width: 1024px) {
   .app-header {
     flex-direction: column;

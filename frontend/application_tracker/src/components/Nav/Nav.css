@@ -20,7 +20,6 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* Shared button styles */
 .nav-button {
   padding: 12px 24px;
   border: none;
@@ -52,7 +51,6 @@
   box-shadow: 0 2px 8px rgba(29, 78, 216, 0.3);
 }
 
-/* Create button - Secondary */
 .nav-add-application {
   background-color: #f8fafc;
   color: #475569;
@@ -73,36 +71,33 @@
 }
 
 
-/* <-------------- media queires ---------------> */
-
+/* <-------------- Mobile (≤480px) ---------------> */
 
 @media (max-width: 480px) {
-  .navbar-flex-container {
-    width: 100%;
-  }
+ .navbar-flex-container {
+   width: 100%;
+ }
+ 
+ .navbar {
+   width: 100%;
+   padding: 8px;
+ }
   
-  .navbar {
-    width: 100%;
-    padding: 8px;
-  }
-   
-  .nav-button {
-    padding: 8px 16px;
-    font-size: 14px;
-  }
+ .nav-button {
+   padding: 8px 16px;
+   font-size: 14px;
+ }
 }
 
-
-
-/* <-------------- media queires (768×1024) ---------------> */
+/* <-------------- Tablet to Small Desktop (481px-1024px) ---------------> */
 
 @media (min-width: 481px) and (max-width: 1024px) {
-  .navbar-flex-container {
-    width: 100%;
-    justify-content: center;
-  }
-  
-  .navbar {
-    width: 400px;
-  }
+ .navbar-flex-container {
+   width: 100%;
+   justify-content: center;
+ }
+ 
+ .navbar {
+   width: 400px;
+ }
 }
