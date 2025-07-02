@@ -7,6 +7,7 @@ const Read = ({ application, onBackClick, handleUpdate, service, setPage, fetchD
       }
 
     return (
+      <div className='read-component'>
         <div className="read-container">
             <div className="read-application-card">
                 <div className="read-card-content">
@@ -27,6 +28,7 @@ const Read = ({ application, onBackClick, handleUpdate, service, setPage, fetchD
                 <button className="read-delete-button" onClick={handleDelete}>Delete</button>
             </div>
         </div>
+       </div> 
     );
 };
 

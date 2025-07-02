@@ -9,7 +9,7 @@
 
 .dashboard-application-container {
     color: #333;
-    height: 30vh;
+    min-height: 30vh;
     width: 18vw;
     padding: 20px;
     margin: 0px 0px 0px 3px;
@@ -90,12 +90,13 @@
 /* <-------------- media queires ---------------> */
 
 @media (max-width: 480px) {
+
   .dashboard-card-container {
-    max-height: 60vh;
+    height: 95%;
+    width: 90%;
+    margin-left: 15px;
+    /* border: 1px solid black; */
     overflow-y: auto;
-    /* flex-direction: column;
-    justify-content: center;
-    align-items: flex-start; */
   }
   
   .dashboard-application-container {
@@ -121,5 +122,20 @@
 @media (min-width: 481px) and (max-width: 1024px) {
   .dashboard-card-container {
     justify-content: center;
+    /* border: 2px solid red; */
+    height: 95%;
+    margin-left: 10px;
+    padding: 20px;
   }
+
+  .dashboard-application-container {
+    /* border: 1px solid blue; */
+    min-height: 20%;
+    width: 60%;
+  }
+
+  /* .dashboard-application-card {
+    border: 1px solid yellow;
+  } */
+
 }
