@@ -49,9 +49,15 @@ const putRequest = async (id, updatedApplication) => {
         });
 
         if (response.ok) {
-            const updatedResult = await response.json();
-            console.log('Update Successful:', updatedResult);
-            return updatedResult;
+            // Check if response has content before parsing JSON
+            if (response.status === 204 || response.headers.get('content-length') === '0') {
+                console.log('Update Successful: No content returned');
+                return null; // or return a success indicator
+            } else {
+                const updatedResult = await response.json();
+                console.log('Update Successful:', updatedResult);
+                return updatedResult;
+            }
         } else {
             console.error('Failed to update application:', response.status, response.statusText);
         }
