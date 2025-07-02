@@ -119,6 +119,7 @@
     }
 }
 
+/* <-------------- Tablet to Small Desktop (481px-1024px) ---------------> */
 
 @media (min-width: 481px) and (max-width: 1024px) {
   
