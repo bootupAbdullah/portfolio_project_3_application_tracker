@@ -5,6 +5,11 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    /* border: 1px solid yellow; */
+    max-width: 100%;  
+    overflow-x: hidden;
+    box-sizing: border-box;
+
 }
 
 .dashboard-application-container {
@@ -15,13 +20,15 @@
     margin: 0px 0px 0px 3px;
     background-color: white;
     border-radius: 8px;
-    border: 1px solid #e2e8f0;
+    /* border: 1px solid yellow; */
     box-shadow: 0 2px 8px rgba(100, 116, 139, 0.08);
     transition: all 0.2s ease;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-sizing: border-box;
+    overflow-y: hidden;
 }
 
 .dashboard-application-container:hover {
@@ -139,3 +146,7 @@
  } */
 
 }
+
+
+
+
