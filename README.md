@@ -2,10 +2,10 @@
 
 <!-- ![Project Logo](./assets/logo.png)  -->
 
-[![MVP Status](https://img.shields.io/badge/status-MVP-green)]()
-[![License](https://img.shields.io/github/license/bootupAbdullah/portfolio_project_3_application_tracker)]()
-[![Last Commit](https://img.shields.io/github/last-commit/bootupAbdullah/portfolio_project_3_application_tracker)]()
-[![Live Demo](https://img.shields.io/badge/demo-live-blue)](https://application-tracker-dash.netlify.app/)
+[![GitHub Release](https://img.shields.io/github/v/release/bootupAbdullah/portfolio_project_3_application_tracker?style=for-the-badge&color=4CAF50)]()
+[![License](https://img.shields.io/github/license/bootupAbdullah/portfolio_project_3_application_tracker?style=for-the-badge&color=2196F3)]()
+[![Last Commit](https://img.shields.io/github/last-commit/bootupAbdullah/portfolio_project_3_application_tracker?style=for-the-badge&color=FF9800)]()
+[![Live Demo](https://img.shields.io/badge/DEMO-LIVE-1976D2?style=for-the-badge)](https://application-tracker-dash.netlify.app/)
 
 A full-stack job application tracking system built with React and ASP.NET Core. This portfolio project demonstrates modern web development practices with component-driven architecture, RESTful API design, and clean separation of concerns.
 
